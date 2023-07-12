@@ -227,9 +227,9 @@ class HelloFrame(wx.Frame):
         panel = wx.Panel(self)
 
         fir_top = 10
-        label = wx.StaticText(panel, label="File Path:", pos=(10, fir_top), size=(80, 35))
+        label = wx.StaticText(panel, label="Dir Path:", pos=(10, fir_top), size=(80, 35))
         self.tfview = wx.TextCtrl(panel, pos=(70, fir_top), size=(200, 20), style=wx.TE_RIGHT)
-        btn = wx.Button(panel, label="Sel File", pos=(300, fir_top), size=(80, 20))
+        btn = wx.Button(panel, label="Sel Dir", pos=(300, fir_top), size=(80, 20))
         btn.Bind(wx.EVT_BUTTON, self.OnClicked)
 
         sec_top = fir_top + 35
